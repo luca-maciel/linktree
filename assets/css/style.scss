@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // border: 1px solid black; 
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/gif8.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container{
+        width: 65%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border-radius: 10px;
+        backdrop-filter: blur(3px);
+        border: 1px solid whitesmoke;
+
+        #name{
+            color: whitesmoke;
+            font-family: "Ubuntu", sans-serif;
+            letter-spacing: 1px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .perfil_photo_area{
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid gray;
+
+            #perfil_photo{
+                width: 100%;
+                height: 100%
+            }
+        }
+
+        .social_media_list{
+            width: 80%;
+            height: 45%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .list_item{
+                width: 98%;
+                height: 18%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                border: 1px solid whitesmoke;
+                transition: .3s;
+                .link{
+                    width: auto;
+                    height: auto;
+                    text-align: center;
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-family: "Ubuntu", sans-serif;
+                    transition: .3s;
+                }
+                .link:hover{
+                    filter: drop-shadow(0 0 12px white);
+                    transition: .3s;
+                }
+            }
+            .list_item:hover{
+                width: 100%;
+                height: 20%;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+@media(min-width:320px) and (max-width:767px){
+    body{
+        width: 100%;
+        height: 90vh;
+        background-image: url('../img/gif16.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .container{
+            width: 80%;
+            height: 70%;
+        }
+    }
+}
