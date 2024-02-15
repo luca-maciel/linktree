@@ -1,6 +1,6 @@
 var nome = document.querySelector('#name');
 var texto = nome.innerHTML;
-console.log(nome, texto);
+
 nome.addEventListener('mouseenter', () => {
     nome.innerHTML = '@lucazf4';
     nome.setAttribute('href', 'https://instagram.com/lucazf4');
